@@ -1,0 +1,24 @@
+{
+  "name": "shorten-url",
+  "version": "1.0.0",
+  "description": "A simple way to shorten long url's so you can share a link more easily.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McQTip22/shorten-url.git"
+  },
+  "author": "Brian McEwen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McQTip22/shorten-url/issues"
+  },
+  "homepage": "https://github.com/McQTip22/shorten-url#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  }
+}

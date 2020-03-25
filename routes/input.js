@@ -3,6 +3,8 @@ var router = express.Router();
 var db = require('../models');
 var helpers = require('../helpers/inputs');
 
-router.route('/').post(helpers.createInput);
+router.route('/').get(helpers.getInputs).post(helpers.createInput);
+
+router.route('/:inputId').get(helpers.getInput).put(helpers.editInput).delete(helpers.deleteInput);
 
 module.exports = router;

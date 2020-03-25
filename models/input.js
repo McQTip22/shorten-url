@@ -1,17 +1,18 @@
 var mongoose = require('mongoose');
+shortid = require('shortid');
 
 var inputSchema = new mongoose.Schema({
 	original: {
 		type: String,
 		required: 'must have input'
 	},
-	shortId: {
+	_id: {
 		type: String,
-		default: '1'
+		default: shortid.generate
 	},
 	new: {
 		type: String,
-		default: 'original + / + shortId'
+		default: ''
 	}
 });
 

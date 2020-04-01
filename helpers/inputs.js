@@ -27,8 +27,8 @@ exports.createInput = function(req, res) {
 exports.getInput = function(req, res) {
 	db.Input
 		.findById(req.params.inputId)
-		.then(function(foundInput) {
-			res.json(foundInput);
+		.then(function(Input) {
+			res.status(301).redirect(Input.original);
 		})
 		.catch(function(err) {
 			res.send(err);

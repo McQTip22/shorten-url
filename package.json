@@ -1,25 +1,27 @@
 {
-  "name": "shorten-url",
-  "version": "1.0.0",
-  "description": "A simple way to shorten long url's so you can share a link more easily.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/McQTip22/shorten-url.git"
-  },
-  "author": "Brian McEwen",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/McQTip22/shorten-url/issues"
-  },
-  "homepage": "https://github.com/McQTip22/shorten-url#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.6",
-    "shortid": "^2.2.15"
-  }
+	"name": "shorten-url",
+	"version": "1.0.0",
+	"description": "A simple way to shorten long url's so you can share a link more easily.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"setup": "npm install a-random-string body-parser express mongoose",
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/McQTip22/shorten-url.git"
+	},
+	"author": "Brian McEwen",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/McQTip22/shorten-url/issues"
+	},
+	"homepage": "https://github.com/McQTip22/shorten-url#readme",
+	"dependencies": {
+		"a-random-string": "^1.0.3",
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.9.6"
+	}
 }

@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 function mkButton(input) {
 	//new url
-	var shorterUrl = 'http://localhost:3000/' + input._id;
-	$('.button').append('<a href="' + input.original + '" class="button">' + shorterUrl + '</a>');
+	var shorterUrl = 'http://localhost:3000/api/urls/' + input._id;
+	$('.button').append('<a href="' + shorterUrl + '"' + input._id + '" class="button">' + shorterUrl + '</a>');
 }
 
 function createInput() {

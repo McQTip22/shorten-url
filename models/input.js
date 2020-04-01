@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-shortid = require('shortid');
+arandomstring = require('a-random-string');
 
 var inputSchema = new mongoose.Schema({
 	original: {
@@ -8,7 +8,7 @@ var inputSchema = new mongoose.Schema({
 	},
 	_id: {
 		type: String,
-		default: shortid.generate
+		default: arandomstring.generate
 	},
 	new: {
 		type: String,
